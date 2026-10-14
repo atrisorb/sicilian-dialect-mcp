@@ -1,0 +1,24 @@
+{
+  "name": "sicilian-dialect-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server per la consultazione e gestione capillare del vocabolario dialettale siciliano (Regione, Provincia, Comune, Quartiere)",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "sicilian-dialect-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "npx tsx server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
